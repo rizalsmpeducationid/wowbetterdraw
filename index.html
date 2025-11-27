@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Drawing Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>My Drawing Site</h1>
+    <div class="toolbar">
+      <button id="penBtn">Pen</button>
+      <button id="eraserBtn">Eraser</button>
+      <input type="color" id="colorPicker" value="#000000" />
+      <select id="brushSize">
+        <option value="2">2px</option>
+        <option value="5">5px</option>
+        <option value="10">10px</option>
+        <option value="20">20px</option>
+      </select>
+      <button id="clearBtn" class="danger">Clear</button>
+      <button id="saveBtn">Save</button>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="drawingCanvas"></canvas>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
